@@ -1,22 +1,15 @@
-node_modules
-
-#storybook build directory
-storybook/storybook-static
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-storybook/node_modules
-components/node_modules
-storybook/.pnp
-storybook/.pnp.js
+/node_modules
+/.pnp
+.pnp.js
 
 # testing
-storybook/coverage
+/coverage
 
 # production
-storybook/build
-components/dist
-
+/build
 
 # misc
 .DS_Store
