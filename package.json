@@ -2,7 +2,6 @@
   "name": "hyp-design-system",
   "version": "1.0.0",
   "author": "anish-oml <anish.saxena@oml.in>",
-  "type": "module",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
@@ -18,9 +17,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@emotion/react": "^11.11.1",
-    "@emotion/styled": "^11.11.0",
-    "@mui/material": "^5.15.1",
+    "@originjs/vite-plugin-commonjs": "^1.0.3",
     "@storybook/addon-essentials": "^7.6.6",
     "@storybook/addon-interactions": "^7.6.6",
     "@storybook/addon-links": "^7.6.6",
@@ -32,6 +29,7 @@
     "@types/react": "^18.2.45",
     "@typescript-eslint/eslint-plugin": "^6.15.0",
     "@typescript-eslint/parser": "^6.15.0",
+    "@vitejs/plugin-react": "^4.2.1",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.1.0",
@@ -39,16 +37,17 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-storybook": "^0.6.15",
     "prettier": "^3.1.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "typescript": "^5.3.3",
     "vite": "^5.0.10",
-    "vite-plugin-dts": "^3.6.4"
+    "vite-plugin-commonjs": "^0.10.1",
+    "vite-plugin-dts": "^3.6.4",
+    "vite-plugin-require-transform": "^1.0.21"
   },
   "peerDependencies": {
-    "@emotion/react": "^11.11.1",
-    "@emotion/styled": "^11.11.0",
-    "@mui/material": "^5.15.1",
-    "react": "^18.2.0"
+    "@emotion/react": ">=11.0.0",
+    "@emotion/styled": ">=11.0.0",
+    "@mui/material": ">=5.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
